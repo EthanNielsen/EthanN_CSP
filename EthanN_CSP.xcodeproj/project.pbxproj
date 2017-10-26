@@ -12,6 +12,13 @@
 		284C7F8D1FA25A3A00747B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284C7F8B1FA25A3A00747B3A /* Main.storyboard */; };
 		284C7F8F1FA25A3A00747B3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 284C7F8E1FA25A3A00747B3A /* Assets.xcassets */; };
 		284C7F921FA25A3A00747B3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284C7F901FA25A3A00747B3A /* LaunchScreen.storyboard */; };
+		284C7F9E1FA25BE700747B3A /* CreativityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C7F9D1FA25BE700747B3A /* CreativityController.swift */; };
+		284C7FA01FA25BFD00747B3A /* AbstractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C7F9F1FA25BFD00747B3A /* AbstractionController.swift */; };
+		284C7FA41FA25C7E00747B3A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C7FA31FA25C7E00747B3A /* DataController.swift */; };
+		284C7FA61FA25C9A00747B3A /* AlgorithmsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C7FA51FA25C9A00747B3A /* AlgorithmsController.swift */; };
+		284C7FA81FA25CAE00747B3A /* ProgrammingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C7FA71FA25CAE00747B3A /* ProgrammingController.swift */; };
+		284C7FAA1FA25CF300747B3A /* InternetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C7FA91FA25CF300747B3A /* InternetController.swift */; };
+		284C7FAC1FA25D0800747B3A /* ImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C7FAB1FA25D0800747B3A /* ImpactController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		284C7F8E1FA25A3A00747B3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		284C7F911FA25A3A00747B3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		284C7F931FA25A3A00747B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		284C7F9D1FA25BE700747B3A /* CreativityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityController.swift; sourceTree = "<group>"; };
+		284C7F9F1FA25BFD00747B3A /* AbstractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionController.swift; sourceTree = "<group>"; };
+		284C7FA31FA25C7E00747B3A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		284C7FA51FA25C9A00747B3A /* AlgorithmsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmsController.swift; sourceTree = "<group>"; };
+		284C7FA71FA25CAE00747B3A /* ProgrammingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingController.swift; sourceTree = "<group>"; };
+		284C7FA91FA25CF300747B3A /* InternetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetController.swift; sourceTree = "<group>"; };
+		284C7FAB1FA25D0800747B3A /* ImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpactController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +81,13 @@
 			children = (
 				284C7F891FA25A3A00747B3A /* ViewController.swift */,
 				284C7F871FA25A3A00747B3A /* AppDelegate.swift */,
+				284C7F9D1FA25BE700747B3A /* CreativityController.swift */,
+				284C7F9F1FA25BFD00747B3A /* AbstractionController.swift */,
+				284C7FA31FA25C7E00747B3A /* DataController.swift */,
+				284C7FA51FA25C9A00747B3A /* AlgorithmsController.swift */,
+				284C7FA71FA25CAE00747B3A /* ProgrammingController.swift */,
+				284C7FA91FA25CF300747B3A /* InternetController.swift */,
+				284C7FAB1FA25D0800747B3A /* ImpactController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -168,6 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284C7FAA1FA25CF300747B3A /* InternetController.swift in Sources */,
+				284C7FA41FA25C7E00747B3A /* DataController.swift in Sources */,
+				284C7FA81FA25CAE00747B3A /* ProgrammingController.swift in Sources */,
+				284C7FA61FA25C9A00747B3A /* AlgorithmsController.swift in Sources */,
+				284C7FA01FA25BFD00747B3A /* AbstractionController.swift in Sources */,
+				284C7F9E1FA25BE700747B3A /* CreativityController.swift in Sources */,
+				284C7FAC1FA25D0800747B3A /* ImpactController.swift in Sources */,
 				284C7F8A1FA25A3A00747B3A /* ViewController.swift in Sources */,
 				284C7F881FA25A3A00747B3A /* AppDelegate.swift in Sources */,
 			);
