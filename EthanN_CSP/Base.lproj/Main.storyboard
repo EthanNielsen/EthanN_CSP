@@ -45,6 +45,42 @@
             </objects>
             <point key="canvasLocation" x="745" y="117"/>
         </scene>
+        <!--Global Impact View Controller-->
+        <scene sceneID="qi9-wo-EUu">
+            <objects>
+                <viewController id="yhs-me-ii3" customClass="GlobalImpactViewController" customModule="EthanN_CSP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rTf-tu-6eP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HumanRights" translatesAutoresizingMaskIntoConstraints="NO" id="w6e-c2-0Rg">
+                                <rect key="frame" x="67" y="20" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HumanRightsApp" translatesAutoresizingMaskIntoConstraints="NO" id="mZ2-AX-4Tw">
+                                <rect key="frame" x="67" y="167" width="240" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52V-of-blq">
+                                <rect key="frame" x="67" y="427" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="6rE-9n-ozV"/>
+                    </view>
+                    <connections>
+                        <outlet property="HumanRights4All" destination="w6e-c2-0Rg" id="GVf-bC-Y5T"/>
+                        <outlet property="RightsApp" destination="mZ2-AX-4Tw" id="24c-Wy-z6m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ZN-XY-Acf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1480.8" y="116.49175412293854"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="fyq-zb-Esd">
             <objects>
@@ -79,6 +115,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HumanRights" width="337" height="149"/>
+        <image name="HumanRightsApp" width="3120" height="4160"/>
         <image name="swiftSample 1x" width="2496" height="2488"/>
     </resources>
 </document>
