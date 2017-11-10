@@ -15,16 +15,24 @@ class GlobalImpactViewController: UIViewController
     
     @IBOutlet weak var RightsApp: UIImageView!
     
+    
     @IBOutlet weak var NeedsAddress: UILabel!
     
-    
     @IBOutlet weak var GlobalProblem: UILabel!
+    
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let addressProblem :String = "People are suffering because they don't have human rights, they can't get health care or find assistance because they don't have human rights. This needs to stop so we created this app."
+        
+        let global :String = "Although we have our human rights other people may not. People in low income areas can't get the nessisary help they need and because of that they either acccept it or die because of it."
+        
+        
+        NeedsAddress.text = addressProblem
+        
+        GlobalProblem.text = global
     }
 
     override func didReceiveMemoryWarning()
