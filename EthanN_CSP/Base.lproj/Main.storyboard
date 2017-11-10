@@ -61,8 +61,25 @@
                                 <rect key="frame" x="67" y="167" width="240" height="238"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52V-of-blq">
-                                <rect key="frame" x="67" y="427" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52V-of-blq">
+                                <rect key="frame" x="62" y="413" width="250" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Our app is designed to make people feel better even though their suffering from a lack of human rights. The app also is able to collect information about how people have had their Human Rights Violated. However, there is no way we can determine if the information inputted is false 
+so our app’s intent is to entertain and inspire.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jG-xh-2Me">
+                                <rect key="frame" x="62" y="560" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AF-Sy-OZt">
+                                <rect key="frame" x="62" y="600" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -73,7 +90,9 @@
                         <viewLayoutGuide key="safeArea" id="6rE-9n-ozV"/>
                     </view>
                     <connections>
+                        <outlet property="GlobalProblem" destination="6AF-Sy-OZt" id="58V-fF-MT1"/>
                         <outlet property="HumanRights4All" destination="w6e-c2-0Rg" id="GVf-bC-Y5T"/>
+                        <outlet property="NeedsAddress" destination="6jG-xh-2Me" id="Hcp-JB-7Ed"/>
                         <outlet property="RightsApp" destination="mZ2-AX-4Tw" id="24c-Wy-z6m"/>
                     </connections>
                 </viewController>

@@ -15,6 +15,11 @@ class GlobalImpactViewController: UIViewController
     
     @IBOutlet weak var RightsApp: UIImageView!
     
+    @IBOutlet weak var NeedsAddress: UILabel!
+    
+    
+    @IBOutlet weak var GlobalProblem: UILabel!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
