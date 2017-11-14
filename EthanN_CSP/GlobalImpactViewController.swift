@@ -11,6 +11,8 @@ import UIKit
 class GlobalImpactViewController: UIViewController
 {
 
+    @IBOutlet weak var PicRights: UIImageView!
+    
     @IBOutlet weak var HumanRights4All: UIImageView!
     
     @IBOutlet weak var RightsApp: UIImageView!
@@ -29,6 +31,8 @@ class GlobalImpactViewController: UIViewController
         
         let global :String = "Although we have our human rights other people may not. People in low income areas can't get the nessisary help they need and because of that they either acccept it or die."
         
+        
+        PicRights.image = #imageLiteral(resourceName: "HumanRights")
         
         NeedsAddress.text = addressProblem
         
