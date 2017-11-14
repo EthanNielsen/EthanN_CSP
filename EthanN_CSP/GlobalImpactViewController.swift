@@ -13,8 +13,6 @@ class GlobalImpactViewController: UIViewController
 
     @IBOutlet weak var PicRights: UIImageView!
     
-    @IBOutlet weak var HumanRights4All: UIImageView!
-    
     @IBOutlet weak var RightsApp: UIImageView!
     
     
