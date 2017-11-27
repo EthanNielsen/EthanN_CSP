@@ -202,6 +202,14 @@ so our app’s intent is to entertain and inspire.
             </objects>
             <point key="canvasLocation" x="708" y="859.52023988005999"/>
         </scene>
+        <!--Abstraction View Controlle-->
+        <scene sceneID="DL5-pu-8jl">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="pwX-RK-MeV" customClass="AbstractionViewControlle" customModule="EthanN_CSP" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tsT-Gx-ETY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="1537"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="QTB-1D-rDA">
             <objects>
