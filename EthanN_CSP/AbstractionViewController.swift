@@ -10,7 +10,7 @@ import Foundation
 
 public class AbstractionViewControlle: UIPageViewController, UIPageViewControllerDataSource
 {
-    
+    //MARK: rray of subviews
     private (set) lazy var orderedAstractionViews : [UIViewController] =
     {
         return [
@@ -22,9 +22,10 @@ public class AbstractionViewControlle: UIPageViewController, UIPageViewControlle
         ]
     }()
 
+    //Helper method to retrieve the correct ViewController
     private func newAbstractionViewController(abstractionLevel : String) -> UIViewController
     {
-        
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewConroller(withIdentifier: "\(abstractionLevel)ViewController")
     }
     
     override public func viewDidLoad()
