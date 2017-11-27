@@ -6,12 +6,12 @@
 //  Copyright © 2017 Ctech. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public class AbstractionViewControlle: UIPageViewController, UIPageViewControllerDataSource
 {
     //MARK: rray of subviews
-    private (set) lazy var orderedAstractionViews : [UIViewController] =
+    private (set) lazy var orderedAbstractionViews : [UIViewController] =
     {
         return [
             self.newAbstractionViewController(abstractionLevel: "Block"),
@@ -25,18 +25,81 @@ public class AbstractionViewControlle: UIPageViewController, UIPageViewControlle
     //Helper method to retrieve the correct ViewController
     private func newAbstractionViewController(abstractionLevel : String) -> UIViewController
     {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewConroller(withIdentifier: "\(abstractionLevel)ViewController")
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "\(abstractionLevel)ViewController")
     }
     
     override public func viewDidLoad()
     {
+        super.viewDidLoad()
+        dataSource = self
         
+        if let firstViewController = orderedAbstractionViews.first
+        {
+            setViewControllers([firstViewController],
+                               direction: .forward,
+                               animated: true,
+                               completion: nil)
+        }
     }
     
+    //MARK:- Reired Protocol methods for UIPageViewControllerDatasource
     public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore
         viewController: UIViewController) -> UIViewController?
     {
+        guard let viewControllerIndex = orderedAbstractionViews.index(of: viewController)
+        else
+        {
+            return nil
+        }
         
+        let previousIndex = viewControllerIndex - 1
+        
+        guard previousIndex >= 0
+        else
+        {
+            return orderedAbstractionViews.last
+        }
+        
+        guard orderedAbstractionViews.count > previousIndex
+        else
+        {
+            return nil
+        }
+        
+        return orderedAbstractionViews[previousIndex]
     }
 
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter
+        viewConroller: UIViewController) -> IViewController?
+    {
+        guard let viewControllerIndex = orderedAbstractionViews.index(of: viewController)
+        else
+        {
+            return nil
+        }
+        
+        let nextIndex >= 0
+        else
+        {
+            return nil
+        }
+        
+        guard nextIndex < orderedAbstractionViews.count
+        else
+        {
+            return orderedAbstractionViews.first
+        }
+        
+        return orderedAbstractionViews[nextIndex]
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
