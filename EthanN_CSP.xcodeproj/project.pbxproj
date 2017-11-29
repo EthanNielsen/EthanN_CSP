@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		283497691FCF39B90033F2EE /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283497681FCF39B90033F2EE /* InternetDetailViewController.swift */; };
 		284C7F881FA25A3A00747B3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C7F871FA25A3A00747B3A /* AppDelegate.swift */; };
 		284C7F8A1FA25A3A00747B3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C7F891FA25A3A00747B3A /* ViewController.swift */; };
 		284C7F8D1FA25A3A00747B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284C7F8B1FA25A3A00747B3A /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		283497681FCF39B90033F2EE /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		284C7F841FA25A3A00747B3A /* EthanN_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthanN_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284C7F871FA25A3A00747B3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		284C7F891FA25A3A00747B3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				284C7FA91FA25CF300747B3A /* InternetMasterViewController.swift */,
 				28A06A3C1FB641D300CE30BB /* GlobalImpactViewController.swift */,
 				2867E9ED1FCC983D000A5B33 /* AbstractionViewController.swift */,
+				283497681FCF39B90033F2EE /* InternetDetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				284C7FA41FA25C7E00747B3A /* DataController.swift in Sources */,
 				284C7FA81FA25CAE00747B3A /* ProgrammingController.swift in Sources */,
 				2867E9EE1FCC983D000A5B33 /* AbstractionViewController.swift in Sources */,
+				283497691FCF39B90033F2EE /* InternetDetailViewController.swift in Sources */,
 				284C7FA61FA25C9A00747B3A /* AlgorithmsController.swift in Sources */,
 				2882161A1FC35FB10027EDEC /* Crushable.swift in Sources */,
 				2882161C1FC360280027EDEC /* Cheese.swift in Sources */,
