@@ -64,13 +64,45 @@ public class InternetMasterViewController : UITableViewController
         return internetTopics.count
     }
     
-    override public func tableView(_ tableVie: UITableView, callForRowAt indexPath: IndexPath) -> UITableViewCell
+    override public func tableView(_ tableVie: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdntifier", for: indexPath)
         let currentText = internetTopics[indexPath.row]
         cell.textLabel!.text = currentText
         
         return cell
+    }
+    
+    //MARK: Handle the internal transfer
+    override public func prepare(for segue: UIStoryboardSegue, sender:Any?)
+    {
+        if segue.identifier! == "showDetail"
+        {
+            if let indexPath = self.tableView.indexPathForSelectedRow
+            {
+                let urlString = addresses[indexPath.row]
+                let pageText : String
+                
+                if indexPath.row == 0
+                {
+                    //TODO: Replace with your definitions
+                    pageText = "Definitions I am Going to write!"
+                }
+                else
+                {
+                    pageText = internetTopics[indexPath.row]
+                }
+                
+                let controller = segue.destination as!
+                    InternetDetailViewController
+                
+                controller.detailsAddress = urlString
+                controller.detailText = pageText
+                controller.navigationItem.leftBarButtonItem =
+                    splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+        }
     }
     
 }
