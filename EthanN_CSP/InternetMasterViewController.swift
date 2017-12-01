@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class InternetMasterViewController : UITabelViewController
+public class InternetMasterViewController : UITableViewController
 {
     private (set) lazy var internetTopics : [String]  =
     {
@@ -30,14 +30,18 @@ public class InternetMasterViewController : UITabelViewController
     {
         //TODO: Replace with your correct links
         addresses = [
-        "https://www.google.com"
-        "https://www.google.com"
+        "https://www.google.com",
+        "https://www.google.com",
         "https://www.google.com"
         ]
+        
+        if let splitView = splitViewController
+        {
+            let currentControllers = splitView.viewControllers
+            detailViewController = currentControllers[0] as?
+                InternetDetailViewController
+        }
     }
-    
-    if let splitViewontroller:
-    
     
     override public func viewDidLoad()
     {
@@ -49,7 +53,7 @@ public class InternetMasterViewController : UITabelViewController
     
     //MARK: - Table view data source
     
-    override public func numberOfSelections(in tbleView: UITableView) -> Int
+    override public func numberOfSections(in tableView: UITableView) -> Int
     {
         // #warning Incomplete inmplementation, return the number of sections.
         return 1
