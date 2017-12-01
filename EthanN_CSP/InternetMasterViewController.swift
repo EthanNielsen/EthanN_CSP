@@ -86,7 +86,13 @@ public class InternetMasterViewController : UITableViewController
                 if indexPath.row == 0
                 {
                     //TODO: Replace with your definitions
-                    pageText = "Definitions I am Going to write!"
+                    pageText = """
+                    Definitions I am Going to write!
+                    a
+                    a
+                    a
+                    a
+                    """
                 }
                 else
                 {
