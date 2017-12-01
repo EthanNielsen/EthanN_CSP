@@ -10,7 +10,7 @@ import UIKit
 
 public class InternetMasterViewController : UITabelViewController
 {
-    private (set) lazy var internetTopics : [string]  =
+    private (set) lazy var internetTopics : [String]  =
     {
         return [
             "Definitions",
@@ -22,12 +22,22 @@ public class InternetMasterViewController : UITabelViewController
         ]
     }()
     
+    private lazy var addresses : [String] = []
+    
     private var detailViewController : InternetDetailViewController?
     
     private func setup() -> Void
     {
-        
+        //TODO: Replace with your correct links
+        addresses = [
+        "https://www.google.com"
+        "https://www.google.com"
+        "https://www.google.com"
+        ]
     }
+    
+    if let splitViewontroller:
+    
     
     override public func viewDidLoad()
     {
