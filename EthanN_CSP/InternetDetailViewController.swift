@@ -15,9 +15,9 @@ public class InternetDetailViewController : UIViewController
     @IBOutlet weak var textView: UILabel!
     @IBOutlet weak var webViewer: WKWebView!
     
-    var detailsAddress : String?
+    var detailAddress : String?
     {
-        // MARK:
+        // MARK: Udate the detail view when a value is changed.
         didSet
         {
             configureDetailView()
@@ -26,7 +26,7 @@ public class InternetDetailViewController : UIViewController
     
     var detailText : String?
     {
-        // MARK
+        // MARK: Update the detail view when a value is changed.
         didSet
         {
             configureDetailView()

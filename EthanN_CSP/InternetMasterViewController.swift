@@ -38,8 +38,7 @@ public class InternetMasterViewController : UITableViewController
         if let splitView = splitViewController
         {
             let currentControllers = splitView.viewControllers
-            detailViewController = currentControllers[0] as?
-                InternetDetailViewController
+            detailViewController = currentControllers[0] as? InternetDetailViewController
         }
     }
     
@@ -64,9 +63,9 @@ public class InternetMasterViewController : UITableViewController
         return internetTopics.count
     }
     
-    override public func tableView(_ tableVie: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdntifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         let currentText = internetTopics[indexPath.row]
         cell.textLabel!.text = currentText
         
