@@ -42,11 +42,11 @@ public class InternetDetailViewController : UIViewController
     
     private func configureDetailView() -> Void
     {
-        if detailsAddress != nil
+        if detailAddress != nil
         {
             if let currentWebView = webViewer
             {
-                let currentURL = URL(string: detailsAddress!)
+                let currentURL = URL(string: detailAddress!)
                 let currentWebRequest = URLRequest(url: currentURL!)
                 currentWebView.load(currentWebRequest)
             }

@@ -101,7 +101,7 @@ public class InternetMasterViewController : UITableViewController
                 let controller = segue.destination as!
                     InternetDetailViewController
                 
-                controller.detailsAddress = urlString
+                controller.detailAddress = urlString
                 controller.detailText = pageText
                 controller.navigationItem.leftBarButtonItem =
                     splitViewController?.displayModeButtonItem
