@@ -14,8 +14,8 @@ class DrawingView: UIView
     {
         // Drawing code
         drawStickFigure().stroke()
-//      drawTurtle()
-//      drawHappyTree()
+        drawTurtle()
+        drawHappyTree()
     }
  
     private func drawStickFigure() -> UIBezierPath
@@ -49,6 +49,10 @@ class DrawingView: UIView
         HotDog.move(to: CGPoint(x: 80, y: 50))
         HotDog.addLine(to: CGPoint(x: 120, y: 150))
         HotDog.addLine(to: CGPoint(x: 40, y: 150))
+        HotDog.lineWidth = 2.0
+        UIColor(patternImage: UIImage(named: "HotDog")!).setFill()
+        HotDog.fill()
+        HotDog.stroke()
         HotDog.close()
         
         let happyTree = UIBezierPath()
