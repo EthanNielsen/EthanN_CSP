@@ -23,6 +23,7 @@
 		2882161A1FC35FB10027EDEC /* Crushable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288216191FC35FB10027EDEC /* Crushable.swift */; };
 		2882161C1FC360280027EDEC /* Cheese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2882161B1FC360280027EDEC /* Cheese.swift */; };
 		28A06A3D1FB641D300CE30BB /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A06A3C1FB641D300CE30BB /* GlobalImpactViewController.swift */; };
+		28BC968C1FD72B33001909BD /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BC968B1FD72B33001909BD /* DrawingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		288216191FC35FB10027EDEC /* Crushable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crushable.swift; sourceTree = "<group>"; };
 		2882161B1FC360280027EDEC /* Cheese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cheese.swift; sourceTree = "<group>"; };
 		28A06A3C1FB641D300CE30BB /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
+		28BC968B1FD72B33001909BD /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			children = (
 				284C7F8B1FA25A3A00747B3A /* Main.storyboard */,
 				284C7F901FA25A3A00747B3A /* LaunchScreen.storyboard */,
+				28BC968B1FD72B33001909BD /* DrawingView.swift */,
 				284C7F9C1FA25A7F00747B3A /* Model */,
 			);
 			name = View;
@@ -215,6 +218,7 @@
 				284C7FA81FA25CAE00747B3A /* ProgrammingController.swift in Sources */,
 				2867E9EE1FCC983D000A5B33 /* AbstractionViewController.swift in Sources */,
 				283497691FCF39B90033F2EE /* InternetDetailViewController.swift in Sources */,
+				28BC968C1FD72B33001909BD /* DrawingView.swift in Sources */,
 				284C7FA61FA25C9A00747B3A /* AlgorithmsController.swift in Sources */,
 				2882161A1FC35FB10027EDEC /* Crushable.swift in Sources */,
 				2882161C1FC360280027EDEC /* Cheese.swift in Sources */,
