@@ -60,4 +60,46 @@ public class CreativityViewController : UICollectionViewCell, UICollectionViewDe
             }
         }
     }
+    
+    
+    //This area displayes the images in cells.
+    //MARK: Lifecycle methods
+    override public func viewDidLoad()
+    {
+        super.viewDidLoad()
+    }
+    
+    //MARK:- UICollectionView methods
+    
+    override public func numberOfSelections(in collectionView: UICollectionView) -> Int
+    {
+        return 1
+    }
+    
+    override public func collectionView(_ collectionView: UICollecctionView,
+                                        numberOfItemsInSection section: Int) -> Int
+    {
+        return artSelection.count
+    }
+    
+    override public func collectionView(_ collectionView: UICollectionView,
+                                        cellForItemAt indexPath: IndexPath) -> UICollectionView
+    {
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
+        
+        artCell.backgroundColor = .magenta
+        artCell.imageView.image = artSelection[indexPath.row]
+        artCell.imageName.text = "My Art"
+        
+        return artCell
+    }
+    
+    //MARK:- Delegate Methods
+    
+    public 
+    
+    
+    
+    
+    
 }
