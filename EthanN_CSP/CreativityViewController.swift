@@ -29,6 +29,7 @@ public class CreativityViewController : UICollectionViewCell, UICollectionViewDe
         ]
     }()
     
+    // Click on a photo and this code makes it big.
     var largePhotoIndexPath: IndexPath?
     {
         didSet
@@ -38,7 +39,25 @@ public class CreativityViewController : UICollectionViewCell, UICollectionViewDe
             {
                 indexPaths.append(largePhotoIndexPath)
             }
-// START HERE ON THE CODE
+            if let oldValue = oldValue
+            {
+                indexPaths.append(oldValue)
+            }
+            
+            collectionView?.performBatchUpdates(
+                {
+                    self.collectionView?.reloadItems(at: indexPaths)
+                })
+            {
+                completed in
+                
+                if let largePhotoIndexPath = self.largePhotoIndexPath
+                {
+                    self.collectionView?.scrollToItem(at: largePhotoIndexPath,
+                                                      at: .centeredVertically,
+                                                      animated: true)
+                }
+            }
         }
     }
 }
