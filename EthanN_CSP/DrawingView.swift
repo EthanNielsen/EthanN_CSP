@@ -39,8 +39,38 @@ class DrawingView: UIView
         stickFigure.move(to: CGPoint(x: 200, y: 270))
         stickFigure.addLine(to: CGPoint (x: 220, y: 300))
         
+        stickFigure.move(to: CGPoint(x: 0,y: 220))
+        stickFigure.addLine(to: CGPoint (x: 0, y: 270))
+        stickFigure.move(to: CGPoint(x: 0, y: 240))
+        stickFigure.addLine(to: CGPoint (x: 0, y: 240))
+        stickFigure.move(to: CGPoint(x: 0, y: 270))
+        stickFigure.addLine(to: CGPoint (x: 0, y: 300))
+        stickFigure.move(to: CGPoint(x: 0, y: 270))
+        stickFigure.addLine(to: CGPoint (x: 0, y: 300))
+        
         return stickFigure
     }
+    
+    //STUPID STUFF
+    public func stupidDraw() -> UIBezierPath
+    {
+        let stupidLines = UIBezierPath()
+        
+        UIColor.green.setStroke()
+        stupidLines.lineWidth = 10.0
+        
+        stupidLines.move(to: CGPoint(x: 250,y: 23))
+        stupidLines.addLine(to: CGPoint (x: 200, y: 10))
+        stupidLines.move(to: CGPoint(x: 180, y: 100))
+        stupidLines.addLine(to: CGPoint (x: 220, y: 100))
+        stupidLines.move(to: CGPoint(x: 200, y: 100))
+        stupidLines.addLine(to: CGPoint (x: 180, y: 20))
+        stupidLines.move(to: CGPoint(x: 2, y: 239))
+        stupidLines.addLine(to: CGPoint (x: 257, y: 23))
+        
+        return stupidLines
+    }
+    
     
     public func drawHappyTree() -> Void
     {
