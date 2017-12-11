@@ -39,14 +39,16 @@ class DrawingView: UIView
         stickFigure.move(to: CGPoint(x: 200, y: 270))
         stickFigure.addLine(to: CGPoint (x: 220, y: 300))
         
-        stickFigure.move(to: CGPoint(x: 0,y: 220))
-        stickFigure.addLine(to: CGPoint (x: 0, y: 270))
-        stickFigure.move(to: CGPoint(x: 0, y: 240))
-        stickFigure.addLine(to: CGPoint (x: 0, y: 240))
-        stickFigure.move(to: CGPoint(x: 0, y: 270))
-        stickFigure.addLine(to: CGPoint (x: 0, y: 300))
-        stickFigure.move(to: CGPoint(x: 0, y: 270))
-        stickFigure.addLine(to: CGPoint (x: 0, y: 300))
+        stickFigure.move(to: CGPoint(x: 200,y: 180))
+        stickFigure.addLine(to: CGPoint (x: 200, y: -600))
+        stickFigure.move(to: CGPoint(x: 200, y: 240))
+//      stickFigure.addLine(to: CGPoint (x: 20, y: 666))
+//      stickFigure.move(to: CGPoint(x: 20, y: 600))
+//      stickFigure.addLine(to: CGPoint (x: 200, y: 300))
+        stickFigure.move(to: CGPoint(x: 20, y: 200))
+        stickFigure.addLine(to: CGPoint (x: 20, y: -666))
+        stickFigure.move(to: CGPoint(x: 125, y: 180))
+        stickFigure.addLine(to: CGPoint (x: 125, y: -666))
         
         return stickFigure
     }
