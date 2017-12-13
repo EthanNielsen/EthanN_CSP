@@ -15,8 +15,11 @@ public class Projectile: SKSpriteNode
     init(imageName: String, bulletSound: String?)
     {
         let texture = SKTexture(imageNamed: imageName)
-        super.init(texture: texture, color: SKColor.clear, size: texture.size())
-        
+        super.init(texture: texture, color: SKColor.clear, size: texture.size()) // SKColor.clear is a filter for the picture.
+        if(bulletSound != nil)
+        {
+            run(SKAction.playSoundFileNamed(bulletSound!, waitForCompletion: false)) // If bulletSound is not nil then play a bullet sound.
+        }
     }
     
     
