@@ -29,7 +29,7 @@ public class Invader: SKSpriteNode
         self.physicsBody?.usesPreciseCollisionDetection = false
         self.physicsBody?.categoryBitMask = CollisionCategories.Invader
         self.physicsBody?.contactTestBitMask = CollisionCategories.PlayerBullet | CollisionCategories.Player
-        self.physicsBody?.collisionBitMask = CollisionCategories
+        self.physicsBody?.collisionBitMask = CollisionCategories.EdgeBody
     
     }
     // Required init must be provided by subclass
