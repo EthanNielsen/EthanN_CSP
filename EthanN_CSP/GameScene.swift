@@ -10,7 +10,7 @@ import UIKit
 import SpriteKit
 import CoreMotion
 
-public class GameScene: SKScene, SKPhysicsContactDelegate
+public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for the game.
 {
     //MARK: Invader Data
     let rowsOfInvaders : Int = 4
@@ -25,7 +25,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     var rightBounds : CGFloat = 0
     
     let maxLevels = 3
-    let motionManager: CMMotionManager = CMMotionManager()
+    let motionManager: CMMotionManager = CMMotionManager() // Allows for turing the device/Phone and accounts for that in game.
     var accelerationX: CGFloat = 0.0
     
     //MARK:- Game Methods
@@ -37,6 +37,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         {
             for invaderCol in 0..<numberOfInvaders
             {
+                // Lets us see wich invader is on a certain row.
                 let currentInvader :Invader = Invader()
                 let halfWidth : CGFloat = currentInvader.size.width / 2
                 let xPosition : CGFloat = size.width / 2 - halfWidth - (CGFloat(numberOfInvaders) * currentInvader.size.width) + 10
@@ -45,7 +46,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
                 currentInvader.invaderRow = invaderRow
                 currentInvader.invaderCol = invaderCol
                 
-                addChild(currentInvader)
+                addChild(currentInvader) // Puts a grid of invaders on the screen
                 if (invaderRow == rowsOfInvaders)
                 {
                     invadersThatCanFire.append(currentInvader)
