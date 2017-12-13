@@ -159,9 +159,9 @@
 		284C7F9B1FA25A6700747B3A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				28C8CAB71FE1AFD300471088 /* StarField.sks */,
 				284C7F8B1FA25A3A00747B3A /* Main.storyboard */,
 				28BC968B1FD72B33001909BD /* DrawingView.swift */,
+				28C8CAB71FE1AFD300471088 /* StarField.sks */,
 			);
 			name = View;
 			sourceTree = "<group>";
