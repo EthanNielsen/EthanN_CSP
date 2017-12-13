@@ -19,15 +19,26 @@ public class StartScene : SKScene
         startButton.name = "start"
         let starField = SKEmitterNode(fileNamed: "StarField")
         starField?.position = CGPoint(x:size.width/2,y:size.height/2)
-        starField?.zPosition = -1000
-        addChild(starField!)
+        starField?.zPosition = -1000 // zPosition means put into position
+        addChild(starField!) // Add things into the scene with addChild method
         addChild(startButton)
     }
     
     
-    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) -> Void
+        // Collection of how may times the screen recives descreat touches. We only care about 1 touch.
     {
+        let currentTouch = touches.first
+        let touchLocation = currentTouch?.location(in: self)
+        let touchedNode = self.atPoint(touchLocation!)
         
+        if (touchedNode.name == "start") // Recognizes that a button has been pressed or "Node in this case and does what the code below does.
+        {
+            let gameOverScene = GameScene(size: size)
+            gameOverScene.scaleMode = scaleMode
+            let transitionType = SKTransition.flipHorizontal(withDuration: 1.0)
+            view?.presentScene(gameOverScene, transition: transitionType)
+        }
         
     }
 }

@@ -8,10 +8,10 @@
 import Foundation
 
 
-var gameLevel : Int = 1
+var gameLevel : Int = 1 // Seperate data value from the class and referenced exterally
 
 
-struct CollisionCategories
+struct CollisionCategories // Static variables / constants / This is the way spritekits handles collitions.
 {
     static let Invader : UInt32 = 0x1 << 0
     static let Player: UInt32 = 0x1 << 1
@@ -20,9 +20,9 @@ struct CollisionCategories
     static let EdgeBody: UInt32 = 0x1 << 4
 }
 
-extension Array
+extension Array // Adds functionality to what swift provides.
 {
-    public func randomElement() -> Element?
+    public func randomElement() -> Element? // Allows us to grab random values in an array.
     {
         if self.count == 0
         {
