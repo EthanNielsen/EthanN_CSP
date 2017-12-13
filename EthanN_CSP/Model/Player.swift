@@ -58,12 +58,12 @@ public class Player: SKSpriteNode
     {
         // This is the animation code. Its what tells the x wing to change colors
         var playerTextures:[SKTexture] = []
-        for i in 1...3
+        for i in 1...3 // changes from picture 1 then 2 then 3
         {
             playerTextures.append(SKTexture(imageNamed: "x wing\(i)"))
         }
         
-        let playerAnimation = SKAction.repeatForever( SKAction.animate(with: playerTextures, timePerFrame: 0.2))
+        let playerAnimation = SKAction.repeatForever( SKAction.animate(with: playerTextures, timePerFrame: 0.2)) // It will animate every 2/10's of a second and will never stop.
         self.run(playerAnimation)
     }
     
