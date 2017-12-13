@@ -11,8 +11,9 @@ import SpriteKit
 
 public class StartScene : SKScene
 {
-    override public func didMove(to view: SKView)
+    override public func didMove(to view: SKView) -> Void
     {
+        // This code basically the positioning of sprites.
         backgroundColor = UIColor.darkGray
         let startButton = SKSpriteNode(imageNamed: "Death Star")
         startButton.position = CGPoint(x: size.width / 2, y: size.height / 2 - 100)

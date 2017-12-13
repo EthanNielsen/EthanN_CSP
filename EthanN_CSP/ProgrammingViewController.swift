@@ -17,10 +17,10 @@ public class ProgrammingViewController: UIViewController
     {
         super.viewDidLoad()
         let gameScene = StartScene(size: view.bounds.size) // Is the cene "certain ammount" big?
-        let gameView= view as! SKView
+        let gameView = view as! SKView
         
         gameView.showsFPS = true // shows FPS...
-        gameView.showNodeCount = true // Can see how many nodes are in active use..
+        gameView.showsNodeCount = true // Can see how many nodes are in active use..
         gameView.ignoresSiblingOrder = true // Telling the scene the order or defining which node is not important.
         
         gameScene.scaleMode = .resizeFill // Resize to fill the window
