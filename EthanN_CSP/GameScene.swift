@@ -69,7 +69,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
         var changeDirection = false
         enumerateChildNodes(withName: "invader")
         {
-            //Closure parameters, this changes the direction of the invader at the left and right bounds of the screen. It then moves down after each direction change.
+            //Closure parameters, this changes the direction of all the invaders at the left and right bounds of the screen. It then moves down after each direction change.
             node, stop in
             let invader = node as! SKSpriteNode
             let invaderHalfWidth = invader.size.width / 2
@@ -83,6 +83,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
         
         if(changeDirection == true)
         {
+            // code that makes it go dow the screen.
             self.invaderSpeed *= -1
             self.enumerateChildNodes(withName: "invader")
             {
@@ -139,6 +140,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
        player.fireBullet(scene: self)
     }
     
+    // updates 60 times per second.
     override public func update(_ currentTime: CFTimeInterval) -> Void
     {
         moveInvaders()
@@ -182,16 +184,17 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
             secondBody = contact.bodyA
         }
         
+        // If Invader and PlayerBullet collided then print message...
         if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.PlayerBullet != 0))
         {
             print("Invader and Player Bullet Contact")
         }
-        
+        // If player and InvaderBullet collided then print message....
         if ((firstBody.categoryBitMask & CollisionCategories.Player != 0) && (secondBody.categoryBitMask & CollisionCategories.InvaderBullet != 0))
         {
             print("Player and Invader Bullet Contact")
         }
-        
+        // If Invader and Player collided then print message...
         if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.Player != 0))
         {
             print("Invader and Player Collision Contact")

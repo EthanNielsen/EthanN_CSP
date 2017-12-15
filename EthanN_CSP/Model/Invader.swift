@@ -22,7 +22,7 @@ public class Invader: SKSpriteNode
         super.init(texture: texture, color: SKColor.clear, size: texture.size())
         self.name = "invader"
         
-        // This is how stuff or the bodies interacts with one another.
+        // This is how stuff or the bodies interacts with one another through the invader.
         self.physicsBody =
             SKPhysicsBody(texture: self.texture!, size: self.size)
         self.physicsBody?.isDynamic = true
