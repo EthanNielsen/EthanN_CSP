@@ -14,7 +14,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
 {
     //MARK: Invader Data
     let rowsOfInvaders : Int = 4
-    var invaderSpeed : Int = 2
+    var invaderSpeed : Int = 2 // have some fun with this ;)
     var invadersThatCanFire : [Invader] = []
     
     //MARK: Player Data
@@ -136,12 +136,12 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
 
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) -> Void
     {
-       
+       player.fireBullet(scene: self)
     }
     
     override public func update(_ currentTime: CFTimeInterval) -> Void
     {
-        
+        moveInvaders()
     }
     
     override public func didSimulatePhysics()

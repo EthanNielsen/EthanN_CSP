@@ -150,8 +150,8 @@
 			children = (
 				28C8CAAD1FE1AE3900471088 /* Sounds */,
 				28C8CAAE1FE1AE9600471088 /* Utilities.swift */,
-				284C7F931FA25A3A00747B3A /* Info.plist */,
 				284C7F8E1FA25A3A00747B3A /* Assets.xcassets */,
+				284C7F931FA25A3A00747B3A /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
