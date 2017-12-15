@@ -83,9 +83,44 @@ public class Player: SKSpriteNode
         
     }
     
+    // Code to fire a bullet from the player
     public func fireBullet(scene: SKScene) -> Void
     {
-        
+        if(!canFire)
+        {
+            return
+        }
+        else
+        {
+            // Code below is what fires the bullet
+            canFire = false
+            let bullet = PlayerLaser(imageName: "lazer", bulletSound: "laser sound.mp3")
+            bullet.position.x = self.position.x
+            bullet.position.y = self.position.y + self.size.height / 2
+            scene.addChild(bullet)
+            let moveBulletAction = SKAction.move(to:CGPoint(x:self.position.x,y:scene.size.height + bullet.size.height), duration: 1.0) // This is how fast the bullet goes
+            let removeBulletAction = SKAction.removeFromParent()
+            bullet.run(SKAction.sequence([moveBulletAction,removeBulletAction]))
+            let waitToEnableFire = SKAction.wait(forDuration: 0.5) // This is how fast the gun fires
+            run(waitToEnableFire,completion:
+                {
+                    self.canFire = true
+                })
+        }
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
