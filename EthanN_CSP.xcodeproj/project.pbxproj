@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2824236E1FE4572900B5E8D3 /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2824236D1FE4572900B5E8D3 /* StarField.sks */; };
 		283497691FCF39B90033F2EE /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283497681FCF39B90033F2EE /* InternetDetailViewController.swift */; };
 		2834976C1FCF3B990033F2EE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2834976B1FCF3B990033F2EE /* WebKit.framework */; };
 		284C7F881FA25A3A00747B3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284C7F871FA25A3A00747B3A /* AppDelegate.swift */; };
@@ -32,7 +33,6 @@
 		28C8CAB31FE1AEF000471088 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8CAB01FE1AEF000471088 /* StartScene.swift */; };
 		28C8CAB41FE1AEF000471088 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8CAB11FE1AEF000471088 /* GameScene.swift */; };
 		28C8CAB51FE1AEF000471088 /* LevelCompleteScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8CAB21FE1AEF000471088 /* LevelCompleteScene.swift */; };
-		28C8CAB91FE1AFD300471088 /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 28C8CAB71FE1AFD300471088 /* StarField.sks */; };
 		28C8CAC01FE1B01700471088 /* Invader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8CABA1FE1B01700471088 /* Invader.swift */; };
 		28C8CAC11FE1B01700471088 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8CABB1FE1B01700471088 /* Player.swift */; };
 		28C8CAC21FE1B01700471088 /* Projectile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C8CABC1FE1B01700471088 /* Projectile.swift */; };
@@ -42,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2824236D1FE4572900B5E8D3 /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
 		283497681FCF39B90033F2EE /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		2834976B1FCF3B990033F2EE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		284C7F841FA25A3A00747B3A /* EthanN_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthanN_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +70,6 @@
 		28C8CAB01FE1AEF000471088 /* StartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		28C8CAB11FE1AEF000471088 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		28C8CAB21FE1AEF000471088 /* LevelCompleteScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelCompleteScene.swift; sourceTree = "<group>"; };
-		28C8CAB81FE1AFD300471088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Base; path = Base.lproj/StarField.sks; sourceTree = "<group>"; };
 		28C8CABA1FE1B01700471088 /* Invader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Invader.swift; sourceTree = "<group>"; };
 		28C8CABB1FE1B01700471088 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		28C8CABC1FE1B01700471088 /* Projectile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projectile.swift; sourceTree = "<group>"; };
@@ -90,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2824236F1FE4573200B5E8D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2824236D1FE4572900B5E8D3 /* StarField.sks */,
+				284C7F8B1FA25A3A00747B3A /* Main.storyboard */,
+				28BC968B1FD72B33001909BD /* DrawingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2834976A1FCF3B990033F2EE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				284C7F991FA25A4900747B3A /* Controller */,
-				284C7F9B1FA25A6700747B3A /* View */,
+				2824236F1FE4573200B5E8D3 /* View */,
 				284C7F9A1FA25A4B00747B3A /* Resources */,
 				284C7F9C1FA25A7F00747B3A /* Model */,
 			);
@@ -154,16 +164,6 @@
 				284C7F931FA25A3A00747B3A /* Info.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		284C7F9B1FA25A6700747B3A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				284C7F8B1FA25A3A00747B3A /* Main.storyboard */,
-				28BC968B1FD72B33001909BD /* DrawingView.swift */,
-				28C8CAB71FE1AFD300471088 /* StarField.sks */,
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		284C7F9C1FA25A7F00747B3A /* Model */ = {
@@ -263,7 +263,7 @@
 			files = (
 				284C7F8F1FA25A3A00747B3A /* Assets.xcassets in Resources */,
 				28C8CAA91FE1AE2D00471088 /* laser sound.mp3 in Resources */,
-				28C8CAB91FE1AFD300471088 /* StarField.sks in Resources */,
+				2824236E1FE4572900B5E8D3 /* StarField.sks in Resources */,
 				284C7F8D1FA25A3A00747B3A /* Main.storyboard in Resources */,
 				28C8CAA81FE1AE2D00471088 /* invader sound.mp3 in Resources */,
 				28C8CAAB1FE1AE2D00471088 /* boss sound.mp3 in Resources */,
@@ -314,14 +314,6 @@
 				284C7F8C1FA25A3A00747B3A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		28C8CAB71FE1AFD300471088 /* StarField.sks */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28C8CAB81FE1AFD300471088 /* Base */,
-			);
-			name = StarField.sks;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

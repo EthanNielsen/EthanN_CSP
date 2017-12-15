@@ -27,8 +27,8 @@ public class Invader: SKSpriteNode
             SKPhysicsBody(texture: self.texture!, size: self.size)
         self.physicsBody?.isDynamic = true
         self.physicsBody?.usesPreciseCollisionDetection = false
-        self.physicsBody?.categoryBitMask = CollisionCategories.Invader
-        self.physicsBody?.contactTestBitMask = CollisionCategories.PlayerBullet | CollisionCategories.Player
+        self.physicsBody?.categoryBitMask = CollisionCategories.Invader // Says what I am
+        self.physicsBody?.contactTestBitMask = CollisionCategories.PlayerBullet | CollisionCategories.Player // Checks to see if I touchd you
         self.physicsBody?.collisionBitMask = CollisionCategories.EdgeBody
     
     }
