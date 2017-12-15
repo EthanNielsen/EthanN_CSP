@@ -103,7 +103,7 @@ so our app’s intent is to entertain and inspire.
         <!--Programming View Controller-->
         <scene sceneID="qNE-JG-sFa">
             <objects>
-                <viewController id="Zcx-dx-Ivi" customClass="ProgrammingViewController" sceneMemberID="viewController">
+                <viewController id="Zcx-dx-Ivi" customClass="ProgrammingViewController" customModule="EthanN_CSP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KTa-m3-AIY" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
