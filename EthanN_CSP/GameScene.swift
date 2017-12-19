@@ -105,7 +105,12 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
     {
         if(invadersThatCanFire.isEmpty)
         {
-            gameLevel +=
+            gameLevel += 1
+            levelComplete()
+        }
+        if let randomInvader = invadersThatCanFire.randomElement()
+        {
+            randomInvader.fireBullet(scene: self)
         }
     }
     
