@@ -70,17 +70,36 @@ public class Player: SKSpriteNode
     
     public func die () -> Void
     {
-        
+        if(!invincible)
+        {
+            lives -= 1
+        }
     }
     
     public func kill() -> Void
     {
-    
+        gameLevel = 1
+        
+        let gameOverScene = DeathScene(size: self.scene!.size)
+        gameOverScene.scaleMode = self.scene!.scaleMode
+        let transitionType = SKTransition.flipHorizontal(withDuration: 1)
+        self.scene!.view!.presentScene(gameOverScene, transition: transitionType)
+        
     }
     
+    // Gives a little bit in invincibility after you die
     public func respawn() -> Void
     {
-        
+        invincible = true
+        let fadeOutAction = SKAction.fadeOut(withDuration: 0.4)
+        let fadeInAction = SKAction.fadeIn(withDuration: 0.4)
+        let fadeOutIn = SKAction.sequence([fadeOutAction, fadeInAction])
+        let fadeOutInAction = SKAction.repeat(fadeOutIn, count: 5)
+        let setInvicibleFalse = SKAction.run()
+        {
+            self.invincible = false
+        }
+        run(SKAction.sequence([fadeOutInAction,setInvicibleFalse]))
     }
     
     // Code to fire a bullet from the player

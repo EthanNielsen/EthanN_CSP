@@ -98,7 +98,14 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
     
     private func invokeInvaderFire() -> Void
     {
-        
+        let fireBullet = SKAction.run()
+        {
+            self.fireInvaderBullet()
+        }
+        let waitToFireBullet = SKAction.wait(forDuration: 2.5)
+        let invaderFire = SKAction.sequence([fireBullet,waitToFireBullet])
+        let repeatForeverAction = SKAction.repeatForever(invaderFire)
+        run(repeatForeverAction)
     }
     
     func fireInvaderBullet() -> Void

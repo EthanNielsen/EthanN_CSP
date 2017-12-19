@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280B19C91FE9AFCB002A0A14 /* DeathScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280B19C81FE9AFCB002A0A14 /* DeathScene.swift */; };
 		2824236E1FE4572900B5E8D3 /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2824236D1FE4572900B5E8D3 /* StarField.sks */; };
 		283497691FCF39B90033F2EE /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283497681FCF39B90033F2EE /* InternetDetailViewController.swift */; };
 		2834976C1FCF3B990033F2EE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2834976B1FCF3B990033F2EE /* WebKit.framework */; };
@@ -42,6 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280B19C81FE9AFCB002A0A14 /* DeathScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathScene.swift; sourceTree = "<group>"; };
 		2824236D1FE4572900B5E8D3 /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
 		283497681FCF39B90033F2EE /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		2834976B1FCF3B990033F2EE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -198,6 +200,7 @@
 				28C8CAB11FE1AEF000471088 /* GameScene.swift */,
 				28C8CAB21FE1AEF000471088 /* LevelCompleteScene.swift */,
 				28C8CAB01FE1AEF000471088 /* StartScene.swift */,
+				280B19C81FE9AFCB002A0A14 /* DeathScene.swift */,
 			);
 			name = GameController;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				28C8CAC21FE1B01700471088 /* Projectile.swift in Sources */,
 				28C8CAB51FE1AEF000471088 /* LevelCompleteScene.swift in Sources */,
 				28A06A3D1FB641D300CE30BB /* GlobalImpactViewController.swift in Sources */,
+				280B19C91FE9AFCB002A0A14 /* DeathScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
