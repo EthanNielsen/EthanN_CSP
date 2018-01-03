@@ -150,10 +150,10 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
         self.physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.physicsBody?.categoryBitMask = CollisionCategories.EdgeBody
         
-        let starField = SKEmitterNode(fileNamed: "StarField")
-        starField?.position = CGPoint(x: size.width / 2, y: size.height / 2)
-        starField?.zPosition = -1000
-        addChild(starField!)
+//        let starField = SKEmitterNode(fileNamed: "StarField")
+//        starField?.position = CGPoint(x: size.width / 2, y: size.height / 2)
+//        starField?.zPosition = -1000
+//        addChild(starField!)
         
         backgroundColor = UIColor.darkGray
         rightBounds = self.size.width - 30
