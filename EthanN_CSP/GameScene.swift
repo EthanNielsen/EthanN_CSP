@@ -29,7 +29,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
     var accelerationX: CGFloat = 0.0
     
     //MARK:- Game Methods
-    
+    //*Makes the game work
     private func setupInvaders() -> Void
     {
         let numberOfInvaders = gameLevel * 2 + 1
@@ -40,7 +40,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
                 // Lets us see wich invader is on a certain row.
                 let currentInvader :Invader = Invader()
                 let halfWidth : CGFloat = currentInvader.size.width / 2
-                let xPosition : CGFloat = size.width - halfWidth - (CGFloat(numberOfInvaders) * currentInvader.size.width) + 10// allows us to put each individual bad guy on the screen
+                let xPosition : CGFloat = size.width - halfWidth - (CGFloat(numberOfInvaders) * currentInvader.size.width) + 10 // allows us to put the invaders as chunks.
                 
                 currentInvader.position = CGPoint(x: xPosition + (currentInvader.size.width + CGFloat(10)) * CGFloat(invaderCol - 1), y: CGFloat(self.size.height - CGFloat(invaderRow) * 46))
                 currentInvader.invaderRow = invaderRow
@@ -49,7 +49,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
                 addChild(currentInvader) // Puts a grid of invaders on the screen
                 if (invaderRow == rowsOfInvaders)
                 {
-                    invadersThatCanFire.append(currentInvader)
+                    invadersThatCanFire.append(currentInvader) // Allows the last row of invaders to fire.
                 }
             }
         }
@@ -60,7 +60,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
     private func setupPlayer() -> Void
     {
         //Frame or bounds
-        player.position = CGPoint(x:self.frame.midX, y:player.size.height/2 + 10) // Gives it a position on the screen.
+        player.position = CGPoint(x:self.frame.midX, y:player.size.height/2 + 10) // Puts the player at the bottom middle of the screen.
         addChild(player)
     }
     
@@ -72,9 +72,9 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
             //Closure parameters, this changes the direction of all the invaders at the left and right bounds of the screen. It then moves down after each direction change.
             node, stop in
             let invader = node as! SKSpriteNode
-            let invaderHalfWidth = invader.size.width / 2
-            invader.position.x -= CGFloat(self.invaderSpeed)
-            if(invader.position.x > self.rightBounds - invaderHalfWidth || invader.position.x < self.leftBounds + invaderHalfWidth)
+            let invaderHalfWidth = invader.size.width / 2 // Half the size of the invader
+            invader.position.x -= CGFloat(self.invaderSpeed) // Subtract from invader speed and affects where the invader will be on the screen.
+            if(invader.position.x > self.rightBounds + invaderHalfWidth || invader.position.x < self.leftBounds - invaderHalfWidth) // If the invader is to far left or right then it will change the direction
             {
                 changeDirection = true
             }
@@ -84,7 +84,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
         if(changeDirection == true)
         {
             // code that makes it go dow the screen.
-            self.invaderSpeed *= -1
+            self.invaderSpeed *= -1 // Has the invader go back and forth.
             self.enumerateChildNodes(withName: "invader")
             {
                 node, stop in
@@ -102,9 +102,9 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
         {
             self.fireInvaderBullet()
         }
-        let waitToFireBullet = SKAction.wait(forDuration: 2.5)
+        let waitToFireBullet = SKAction.wait(forDuration: 2.5) // The firerate of the Invaders.
         let invaderFire = SKAction.sequence([fireBullet,waitToFireBullet])
-        let repeatForeverAction = SKAction.repeatForever(invaderFire)
+        let repeatForeverAction = SKAction.repeatForever(invaderFire) // Always be shooting as long as the code is running.
         run(repeatForeverAction)
     }
     
@@ -121,7 +121,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
         }
     }
     
-    func newGame() -> Void
+    func newGame() -> Void // Loading the StartScene pannel and putting it on the screen.
     {
         let newGameScene = StartScene(size: size)
         newGameScene.scaleMode = scaleMode
@@ -129,7 +129,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
         view?.presentScene(newGameScene, transition: transitionType)
     }
     
-    func levelComplete() -> Void
+    func levelComplete() -> Void // Loading the LevelComplete pannel and putting it on the screen.
     {
         if(gameLevel <= maxLevels)
         {
@@ -143,14 +143,19 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
     
     //MARK:- Scene methods
     
-    override public func didMove(to view: SKView) -> Void
+    override public func didMove(to view: SKView) -> Void // Picks the screen showing
     {
         self.physicsWorld.gravity = CGVector(dx:0, dy:0)
         self.physicsWorld.contactDelegate = self
         self.physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.physicsBody?.categoryBitMask = CollisionCategories.EdgeBody
         
-        backgroundColor = UIColor.magenta
+        let starField = SKEmitterNode(fileNamed: "StarField")
+        starField?.position = CGPoint(x: size.width / 2, y: size.height / 2)
+        starField?.zPosition = -1000
+        addChild(starField!)
+        
+        backgroundColor = UIColor.darkGray
         rightBounds = self.size.width - 30
         setupInvaders()
         setupPlayer()
