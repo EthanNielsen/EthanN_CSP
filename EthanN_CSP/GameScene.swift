@@ -164,6 +164,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
         
     }
 
+    // Touch the screen than fire
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) -> Void
     {
        player.fireBullet(scene: self)
@@ -177,20 +178,20 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
     
     override public func didSimulatePhysics()
     {
-        
+        player.physicsBody?.velocity = CGVector(dx: accelerationX * 600, dy: 0) // Determines the movement for the player.
     }
 
     //MARK:- Handle Motion
     func setupAccelerometer() -> Void
     {
-        motionManager.accelerometerUpdateInterval = 0.2
+        motionManager.accelerometerUpdateInterval = 0.2 // It is the response for updating the speed. Smaller number makes it more responsive.
         motionManager.startAccelerometerUpdates(to: OperationQueue.current!, withHandler:
             {
                 (accelerometerData: CMAccelerometerData?, error: Error?)
                 in
                     let acceleration = accelerometerData!.acceleration
                     self.accelerationX = CGFloat(acceleration.x)
-                } )
+            } )
     }
     
     
@@ -199,9 +200,9 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
     // This is how we do the test collisions.
     public func didBegin(_ contact: SKPhysicsContact) -> Void
     {
-        
         var firstBody: SKPhysicsBody
         var secondBody: SKPhysicsBody
+        
         if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask
         {
             firstBody = contact.bodyA
@@ -228,6 +229,46 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
         {
             print("Invader and Player Collision Contact")
         }
+        
+        if ((firstBody.categoryBitMask & CollisionCategories.Player != 0) && (secondBody.categoryBitMask & CollisionCategories.InvaderBullet != 0))
+        {
+            player.die()
+        }
+        
+        if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.Player != 0))
+        {
+            player.die()
+        }
+        
+        if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.PlayerBullet != 0))
+        {
+            if (contact.bodyA.node?.parent == nil || contact.bodyB.node?.parent == nil)
+            {
+                return
+            }
+            
+            let theInvader = firstBody.node as! Invader
+            let newInvaderRow = theInvader.invaderRow - 1
+            let newInvaderCol = theInvader.invaderCol
+            
+            if(newInvaderRow >= 1)
+            {
+                node, stop in
+                let invader = node as! Invader
+                if invader.invaderRow == newInvaderRow && invader.invaderCol == newInvaderCol
+                {
+                    self.invadersThatCanFire.append(invader)
+                    stop.pointee = true
+                }
+            }
+        }
+        let invaderIndex = invadersThatCanFire.index(of: firstBody.node as! Invader)
+        if(invaderIndex != nil)
+        {
+            invadersThatCanFire.remove(at: invaderIndex!)
+        }
+        theInvader.removeFromParent()
+        secondBody.node!.removeFromParent()
         
         
     }
