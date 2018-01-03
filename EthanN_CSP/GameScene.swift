@@ -142,7 +142,6 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
     
     
     //MARK:- Scene methods
-    
     override public func didMove(to view: SKView) -> Void // Picks the screen showing
     {
         self.physicsWorld.gravity = CGVector(dx:0, dy:0)
