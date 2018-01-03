@@ -253,15 +253,17 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
             
             if(newInvaderRow >= 1)
             {
-                node, stop in
-                let invader = node as! Invader
-                if invader.invaderRow == newInvaderRow && invader.invaderCol == newInvaderCol
+                self.enumerateChildNodes(withName: "invader")
                 {
-                    self.invadersThatCanFire.append(invader)
-                    stop.pointee = true
+                    node, stop in
+                    let invader = node as! Invader
+                    if invader.invaderRow == newInvaderRow && invader.invaderCol == newInvaderCol
+                    {
+                            self.invadersThatCanFire.append(invader)
+                        stop.pointee = true
+                    }
                 }
             }
-        }
         let invaderIndex = invadersThatCanFire.index(of: firstBody.node as! Invader)
         if(invaderIndex != nil)
         {
