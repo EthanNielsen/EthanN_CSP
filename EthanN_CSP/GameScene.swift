@@ -259,7 +259,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
                     let invader = node as! Invader
                     if invader.invaderRow == newInvaderRow && invader.invaderCol == newInvaderCol
                     {
-                            self.invadersThatCanFire.append(invader)
+                        self.invadersThatCanFire.append(invader)
                         stop.pointee = true
                     }
                 }
@@ -272,11 +272,9 @@ public class GameScene: SKScene, SKPhysicsContactDelegate // Main controller for
         theInvader.removeFromParent()
         secondBody.node!.removeFromParent()
         
-        
+        }
     }
-    
 }
-
 
 
 
