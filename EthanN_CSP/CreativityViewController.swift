@@ -19,7 +19,7 @@ public class CreativityViewController : UICollectionViewController, UICollection
         return [
             UIImage(named: "HotDog"),
             UIImage(named: "Haiku"),
-            UIImage(named: "Pic tree"),
+            UIImage(named: "TreePic"),
             UIImage(named: "HotDog"),
             UIImage(named: "HotDog"),
             UIImage(named: "HotDog"),
