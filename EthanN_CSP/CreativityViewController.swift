@@ -18,8 +18,8 @@ public class CreativityViewController : UICollectionViewController, UICollection
     {
         return [
             UIImage(named: "HotDog"),
-            UIImage(named: "HotDog"),
-            UIImage(named: "HotDog"),
+            UIImage(named: "Haiku"),
+            UIImage(named: "Pic tree"),
             UIImage(named: "HotDog"),
             UIImage(named: "HotDog"),
             UIImage(named: "HotDog"),
@@ -28,6 +28,8 @@ public class CreativityViewController : UICollectionViewController, UICollection
             UIImage(named: "HotDog"),
         ]
     }()
+    
+    
     
     // Click on a photo and this code makes it big.
     var largePhotoIndexPath: IndexPath?
