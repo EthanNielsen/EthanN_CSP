@@ -30,6 +30,7 @@ public class InternetMasterViewController : UITableViewController
     {
         //TODO: Replace with your correct links
         addresses = [
+        "https://www.google.com/",
         "https://apstudent.collegeboard.org/apcourse/ap-computer-science-principles",
         "http://www.canyonsdistrict.org",
         "https://ctec.canyonsdistrict.org/index.php/programs/ctec-programs",
