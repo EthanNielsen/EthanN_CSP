@@ -350,7 +350,7 @@ so our app’s intent is to entertain and inspire.
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="VQI-M7-UGQ" kind="showDetail" identifier="showDetail" id="Lqz-qL-j0r"/>
+                                    <segue destination="VQI-M7-UGQ" kind="showDetail" identifier="showDetail" id="8zk-qc-u0n"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -392,7 +392,7 @@ so our app’s intent is to entertain and inspire.
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXM-pV-pst" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="22" y="116"/>
+            <point key="canvasLocation" x="246" y="-66"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="E4G-ol-n7n">
@@ -428,7 +428,7 @@ so our app’s intent is to entertain and inspire.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nCt-de-OAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2853.5999999999999" y="859.52023988005999"/>
+            <point key="canvasLocation" x="1527" y="918"/>
         </scene>
     </scenes>
     <resources>
@@ -441,6 +441,6 @@ so our app’s intent is to entertain and inspire.
         <image name="swiftSample 1x" width="2496" height="2488"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Lqz-qL-j0r"/>
+        <segue reference="8zk-qc-u0n"/>
     </inferredMetricsTieBreakers>
 </document>

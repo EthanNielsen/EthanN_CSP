@@ -30,9 +30,11 @@ public class InternetMasterViewController : UITableViewController
     {
         //TODO: Replace with your correct links
         addresses = [
-        "https://www.google.com",
-        "https://www.google.com",
-        "https://www.google.com"
+        "https://apstudent.collegeboard.org/apcourse/ap-computer-science-principles",
+        "http://www.canyonsdistrict.org",
+        "https://ctec.canyonsdistrict.org/index.php/programs/ctec-programs",
+        "https://www.aboutobjects.com/training/swift-training.html?gclid=CjwKCAiAxarQBRAmEiwA6YcGKMt4NtqrlMpy-PFBCfP7SZkQonMmVqIJs5dIvImYjHqfFTINsRFuqRoCQioQAvD_BwE",
+        "https://twitter.com/?lang=en"
         ]
         
         if let splitView = splitViewController
@@ -86,11 +88,10 @@ public class InternetMasterViewController : UITableViewController
                 {
                     //TODO: Replace with your definitions
                     pageText = """
-                    Definitions I am Going to write!
-                    a
-                    a
-                    a
-                    a
+                    URL - The address of a world wide web page.
+                    TCP - A set of rules that controls the delivery of data on the Internet.
+                    IP - Internet Protocol
+                    DNS - Domain Name System, it resolves “human-readable” hostnames.
                     """
                 }
                 else

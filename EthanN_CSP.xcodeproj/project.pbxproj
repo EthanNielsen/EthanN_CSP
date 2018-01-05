@@ -146,13 +146,13 @@
 				284C7F871FA25A3A00747B3A /* AppDelegate.swift */,
 				284C7FA31FA25C7E00747B3A /* DataController.swift */,
 				284C7FA51FA25C9A00747B3A /* AlgorithmsController.swift */,
-				284C7FA91FA25CF300747B3A /* InternetMasterViewController.swift */,
 				28A06A3C1FB641D300CE30BB /* GlobalImpactViewController.swift */,
 				2867E9ED1FCC983D000A5B33 /* AbstractionViewController.swift */,
-				283497681FCF39B90033F2EE /* InternetDetailViewController.swift */,
 				28C05F951FD9DED8008F9734 /* ArtCell.swift */,
 				28C05F971FD9DFA6008F9734 /* CreativityViewController.swift */,
 				28C8CAC61FE1B32200471088 /* ProgrammingViewController.swift */,
+				284C7FA91FA25CF300747B3A /* InternetMasterViewController.swift */,
+				283497681FCF39B90033F2EE /* InternetDetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
