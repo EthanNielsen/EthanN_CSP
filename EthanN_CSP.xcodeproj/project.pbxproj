@@ -22,6 +22,7 @@
 		287429FE200547BE006CDC02 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287429FD200547BE006CDC02 /* DataViewController.swift */; };
 		28742A00200548B6006CDC02 /* bucket.csv in Resources */ = {isa = PBXBuildFile; fileRef = 287429FF200548B6006CDC02 /* bucket.csv */; };
 		28742A0220054983006CDC02 /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28742A0120054983006CDC02 /* BucketItemCell.swift */; };
+		28742A04200558DA006CDC02 /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28742A03200558DA006CDC02 /* BucketItem.swift */; };
 		2882161A1FC35FB10027EDEC /* Crushable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288216191FC35FB10027EDEC /* Crushable.swift */; };
 		2882161C1FC360280027EDEC /* Cheese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2882161B1FC360280027EDEC /* Cheese.swift */; };
 		28A06A3D1FB641D300CE30BB /* GlobalImpactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A06A3C1FB641D300CE30BB /* GlobalImpactViewController.swift */; };
@@ -63,6 +64,7 @@
 		287429FD200547BE006CDC02 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		287429FF200548B6006CDC02 /* bucket.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bucket.csv; sourceTree = "<group>"; };
 		28742A0120054983006CDC02 /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		28742A03200558DA006CDC02 /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
 		288216191FC35FB10027EDEC /* Crushable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crushable.swift; sourceTree = "<group>"; };
 		2882161B1FC360280027EDEC /* Cheese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cheese.swift; sourceTree = "<group>"; };
 		28A06A3C1FB641D300CE30BB /* GlobalImpactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				28C8CABC1FE1B01700471088 /* Projectile.swift */,
 				288216191FC35FB10027EDEC /* Crushable.swift */,
 				2882161B1FC360280027EDEC /* Cheese.swift */,
+				28742A03200558DA006CDC02 /* BucketItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				284C7FAA1FA25CF300747B3A /* InternetMasterViewController.swift in Sources */,
 				28C05F961FD9DED8008F9734 /* ArtCell.swift in Sources */,
 				284C7FA41FA25C7E00747B3A /* DataController.swift in Sources */,
+				28742A04200558DA006CDC02 /* BucketItem.swift in Sources */,
 				2867E9EE1FCC983D000A5B33 /* AbstractionViewController.swift in Sources */,
 				283497691FCF39B90033F2EE /* InternetDetailViewController.swift in Sources */,
 				28C8CAC01FE1B01700471088 /* Invader.swift in Sources */,
