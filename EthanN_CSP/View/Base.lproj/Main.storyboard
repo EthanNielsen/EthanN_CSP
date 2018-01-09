@@ -150,7 +150,7 @@ so our app’s intent is to entertain and inspire.
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZcP-6P-2Z2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2732" y="250"/>
+            <point key="canvasLocation" x="1084" y="168"/>
         </scene>
         <!--Programming View Controller-->
         <scene sceneID="qNE-JG-sFa">
@@ -383,7 +383,7 @@ so our app’s intent is to entertain and inspire.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80V-35-Lt4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="206"/>
+            <point key="canvasLocation" x="-232" y="168"/>
         </scene>
         <!--Internet Samples-->
         <scene sceneID="nNj-uv-Qt6">
@@ -415,7 +415,7 @@ so our app’s intent is to entertain and inspire.
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNL-Vm-bRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2642" y="-469"/>
+            <point key="canvasLocation" x="723" y="-592"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JxC-o5-eYY">
@@ -431,7 +431,7 @@ so our app’s intent is to entertain and inspire.
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bno-q8-SNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="-469"/>
+            <point key="canvasLocation" x="62" y="-591"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="9sM-i7-9Me">
@@ -444,7 +444,7 @@ so our app’s intent is to entertain and inspire.
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXM-pV-pst" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="246" y="-66"/>
+            <point key="canvasLocation" x="-510" y="-590"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="E4G-ol-n7n">
@@ -498,7 +498,7 @@ so our app’s intent is to entertain and inspire.
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SHd-4R-SlX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1935" y="250"/>
+            <point key="canvasLocation" x="373" y="168"/>
         </scene>
     </scenes>
     <resources>
