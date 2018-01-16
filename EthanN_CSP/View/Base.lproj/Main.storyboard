@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S8S-rh-ewo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mMd-qb-Y1O">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2n-pn-EuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="975" y="252"/>
+            <point key="canvasLocation" x="1312.8" y="251.42428785607197"/>
         </scene>
         <!--Global Impact View Controller-->
         <scene sceneID="qi9-wo-EUu">
@@ -98,7 +98,7 @@ so our app’s intent is to entertain and inspire.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ZN-XY-Acf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="292" y="-144"/>
+            <point key="canvasLocation" x="631.20000000000005" y="-144.3778110944528"/>
         </scene>
         <!--Creativity View Controller-->
         <scene sceneID="Hq3-Dv-mU5">
@@ -150,7 +150,7 @@ so our app’s intent is to entertain and inspire.
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZcP-6P-2Z2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3122" y="116"/>
+            <point key="canvasLocation" x="-3566" y="116"/>
         </scene>
         <!--Programming View Controller-->
         <scene sceneID="qNE-JG-sFa">
@@ -165,7 +165,7 @@ so our app’s intent is to entertain and inspire.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F0L-FB-vTP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1770" y="-754"/>
+            <point key="canvasLocation" x="-2113" y="-1197"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fyq-zb-Esd">
@@ -232,10 +232,11 @@ so our app’s intent is to entertain and inspire.
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="UDw-Iz-Ql9"/>
                     </view>
+                    <navigationItem key="navigationItem" id="eXW-Xj-4F7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zga-j7-qqX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1012" y="115.59220389805098"/>
+            <point key="canvasLocation" x="-672.79999999999995" y="115.59220389805098"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SB5-D5-yk8">
@@ -602,7 +603,25 @@ so our app’s intent is to entertain and inspire.
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SHd-4R-SlX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2474" y="116"/>
+            <point key="canvasLocation" x="-2882" y="116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="g7p-XZ-rzS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mMd-qb-Y1O" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wa4-IS-CYe">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="S8S-rh-ewo" kind="relationship" relationship="rootViewController" id="jxw-zB-HGM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AKz-qv-ApA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1470" y="-15"/>
         </scene>
     </scenes>
     <resources>
@@ -615,6 +634,6 @@ so our app’s intent is to entertain and inspire.
         <image name="swiftSample 1x" width="2496" height="2488"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xYa-o6-ecS"/>
+        <segue reference="8zk-qc-u0n"/>
     </inferredMetricsTieBreakers>
 </document>
