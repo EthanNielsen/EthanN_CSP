@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2n-pn-EuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2434" y="-998"/>
+            <point key="canvasLocation" x="975" y="252"/>
         </scene>
         <!--Global Impact View Controller-->
         <scene sceneID="qi9-wo-EUu">
@@ -98,7 +98,7 @@ so our app’s intent is to entertain and inspire.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ZN-XY-Acf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1788" y="-1381"/>
+            <point key="canvasLocation" x="292" y="-144"/>
         </scene>
         <!--Creativity View Controller-->
         <scene sceneID="Hq3-Dv-mU5">
@@ -165,7 +165,7 @@ so our app’s intent is to entertain and inspire.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F0L-FB-vTP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1148" y="-1477"/>
+            <point key="canvasLocation" x="-1770" y="-754"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fyq-zb-Esd">
@@ -202,6 +202,30 @@ so our app’s intent is to entertain and inspire.
                                 <state key="normal" title="Internet Screen"/>
                                 <connections>
                                     <segue destination="nzK-R9-VnO" kind="show" id="mDP-QO-rTn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMb-al-Syj">
+                                <rect key="frame" x="110" y="443" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Algorithm"/>
+                                <connections>
+                                    <segue destination="JlI-Q4-yDC" kind="show" id="xAq-sE-ZAA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CG-Oh-JEH">
+                                <rect key="frame" x="110" y="524" width="122" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Global Impact"/>
+                                <connections>
+                                    <segue destination="yhs-me-ii3" kind="show" id="7fa-sF-3nt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpJ-Nw-GbS">
+                                <rect key="frame" x="148" y="617" width="148" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Abstracction View"/>
+                                <connections>
+                                    <segue destination="pwX-RK-MeV" kind="show" id="aMY-di-mYo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -399,7 +423,7 @@ so our app’s intent is to entertain and inspire.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80V-35-Lt4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="-1347"/>
+            <point key="canvasLocation" x="1862" y="-1746"/>
         </scene>
         <!--Internet Samples-->
         <scene sceneID="nNj-uv-Qt6">
@@ -431,7 +455,7 @@ so our app’s intent is to entertain and inspire.
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNL-Vm-bRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="-591"/>
+            <point key="canvasLocation" x="2262" y="-991"/>
         </scene>
         <!--Data View Controller-->
         <scene sceneID="fq9-1g-oV3">
@@ -495,7 +519,7 @@ so our app’s intent is to entertain and inspire.
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rE9-Qt-StR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="404" y="116"/>
+            <point key="canvasLocation" x="-98" y="-803"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JxC-o5-eYY">
@@ -511,7 +535,7 @@ so our app’s intent is to entertain and inspire.
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bno-q8-SNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="441" y="-591"/>
+            <point key="canvasLocation" x="1570" y="-991"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="9sM-i7-9Me">
@@ -524,7 +548,7 @@ so our app’s intent is to entertain and inspire.
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXM-pV-pst" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-338" y="-591"/>
+            <point key="canvasLocation" x="774" y="-958"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="E4G-ol-n7n">
@@ -591,6 +615,6 @@ so our app’s intent is to entertain and inspire.
         <image name="swiftSample 1x" width="2496" height="2488"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8zk-qc-u0n"/>
+        <segue reference="xYa-o6-ecS"/>
     </inferredMetricsTieBreakers>
 </document>
